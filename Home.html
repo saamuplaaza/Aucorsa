@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aucorsa</title>
+  <link rel="shortcut icon" href="./images/logo-aucorsa.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/Home.css">
+  <script src="https://kit.fontawesome.com/8796d23a0a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+  <!-- NAVBAR -->
+
+  <!-- NAVBAR MOBILE -->
+  <div class="navbar-mobile">
+    <a href="./Home.html" class="logo"><img src="./images/logo-aucorsa.svg" alt="Logo Aucorsa"></a>
+    <li class="item">
+      <a href="#">Menú</a>
+      <i class="fas fa-bars"></i>
+    </li>
+  </div>
+
+  <!-- NAVBAR MENU MOBILE -->
+  <div class="navbar-menu">
+    <ul class="menu">
+      <span>Muévete en bus</span>
+      <li class="item"><a href="./Lineas.html">Líneas y horarios</a></li>
+      <li class="item"><a href="./Titulos.html">Precios y Tarifas</a></li>
+      <li class="item"><a href="./Gestion.html">Gestión de tarjetas</a></li>
+      <span>Atención al cliente</span>
+      <li class="item"><a href="#">Consultas, reclamaciones y agradecimientos</a></li>
+      <li class="item"><a href="#">Preguntas frecuentes</a></li>
+      <li class="item"><a href="#">Objetos perdidos</a></li>
+      <li class="item"><a href="#">Derechos y obligaciones</a></li>
+      <li class="item"><a href="#">Avisos del servicio</a></li>
+      <li class="item"><a href="#">Contacto</a></li>
+      <li class="item"><a href="#">AUCORSA al día</a></li>
+      <li class="item"><a href="#">La empresa</a></li>
+    </ul>
+  </div>
+
+  <!-- NAVBAR DESKTOP -->
+  <nav class="navbar-desktop">
+    <a href="./Home.html" class="logo"><img src="./images/logo-aucorsa.svg" alt="Logo Aucorsa"></a>
+    <ul class="menu">
+
+      <!-- SubMenu Hover -->
+      <li class="item"><a href="./Lineas.html">Muévete en bus</a>
+        <ul class="sub-menu">
+          <li class="item-sub"><a href="./Lineas.html">Líneas y horarios</a></li>
+          <li class="item-sub"><a href="./Titulos.html">Precios y Tarifas</a></li>
+          <li class="item-sub"><a href="./Gestion.html">Gestión de tarjetas</a></li>
+        </ul>
+      </li>
+
+      <li class="item"><a href="#">Atención al cliente</a></li>
+      <li class="item"><a href="#">AUCORSA al día</a></li>
+      <li class="item end">Buscar <i class="fas fa-search"></i></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT -->
+  <section class="hero">
+    <button class="btn-avisos">! Avisos del servicio</button>
+
+    <div class="forms">
+      <form class="form" action="">
+        <p>¿Cuándo llega mi bus?</p>
+        <input type="text" placeholder="Línea">
+        <input type="text" placeholder="Parada">
+        <input type="submit" value="Buscar">
+        <div class="buttons">
+          <button>Paradas cercanas</button>
+          <button>Paradas favoritas</button>
+        </div>
+      </form>
+
+      <form class="form" action="">
+        <p>¿Cómo llego a mi destino?</p>
+        <input type="text" placeholder="Origen">
+        <input type="text" placeholder="Destino">
+        <input type="submit" value="Buscar">
+        <div class="buttons">
+          <button>Ver todas las líneas</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <form class="form-tarjeta" action="">
+    <p>Recargar mi tarjeta AUCORSA</p>
+    <input type="text" placeholder="Número de tarjeta">
+    <span>* El número de la tarjeta aparece en el reverso de la misma.</span>
+
+    <div class="checkbox">
+      <input type="checkbox"> Acepto <a href="#">Política de privacidad y condiciones generales de recarga
+        online</a>
+    </div>
+    <input type="submit" value="Recargar">
+  </form>
+
+  <section class="pages">
+    <img src="./images/lineasyhorarios.webp" alt="Lineas y horarios">
+    <img src="./images/gestiondetarjetas.webp" alt="Gestión de tarjetas">
+    <img src="./images/contacto.webp" alt="Contacto">
+  </section>
+
+  <!-- NOTICIAS -->
+  <section class="noticias">
+    <h2>Noticias Recientes</h2>
+    <div>
+      <a href="#" class="noticia">
+        <p class="titulo">AUCORSA muestra la parada más cercana a tu ubicación</p>
+        <p class="descripcion">AUCORSA da un paso más hacia la accesibilidad lanzando una nueva funcionalidad en su web
+          que permite a los usuarios/as…</p>
+      </a>
+      <a href="#" class="noticia">
+        <p class="titulo">AUCORSA ofrece nuevas alternativas de pago en los autobuses</p>
+        <p class="descripcion">En un esfuerzo por mejorar la experiencia de los usuarios/as y adaptarse a sus
+          necesidades
+          y demandas, AUCORSA pondrá en…</p>
+      </a>
+      <a href="#" class="noticia">
+        <p class="titulo">AUCORSA ofrece nuevas alternativas de pago en los autobuses</p>
+        <p class="descripcion">AUCORSA suma una nueva vía de comunicación con sus usuarios a través de la aplicación de
+          mensajería instantánea WhatsApp. En…</p>
+      </a>
+      <a href="#" class="noticia">
+        <p class="titulo">AUCORSA ofrece nuevas alternativas de pago en los autobuses</p>
+        <p class="descripcion">Con motivo de la apertura de la bolsa de conductores/as de AUCORSA, el próximo lunes, 15
+          de
+          abril, se incorporarán…</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <!-- FOOTER MOBILE -->
+  <footer class="footer-mobile">
+
+    <section class="footer-menu">
+
+      <div>
+        <img src="./images/logo-aucorsa.svg" alt="Logo Aucorsa">
+        <img src="./images/ayuncordoba.svg" alt="Ayuntamento de Cordoba">
+        <span>Oficinas centrales</span>
+        <a href="#">C/Los Artesanos S/N Córdoba - 14014</a>
+      </div>
+
+      <div>
+        <span>Contacto</span>
+        <a href="#">957 764 676</a>
+        <a href="#">900 859 876</a>
+        <a href="#">aucorsa@aucorsa.es</a>
+        <span>Oficina Atención al Cliente</span>
+        <a href="#">Plaza de Colón S/N Córdoba - 14001</a>
+        <a href="#">957 476 450</a>
+      </div>
+
+    </section>
+    <section class="footer-social">
+      <div class="line"></div>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="line"></div>
+
+    </section>
+    <section class="footer-copyright">
+
+      <p>© Autobues de Córdoba, S.A.</p>
+      <a href="#">Política de cookies</a>
+      <a href="#">Aviso legal y Política de privacidad</a>
+      <div>
+        <a href="#">Accesibilidad</a>
+        <a href="#">Mapa del sitio</a>
+      </div>
+
+    </section>
+
+  </footer>
+
+  <!-- FOOTER DESKTOP -->
+  <footer class="footer-desktop">
+    <section class="footer-menu">
+      <div>
+        <img src="./images/logo-aucorsa.svg" alt="Logo Aucorsa">
+        <img src="./images/ayuncordoba.svg" alt="Ayuntamento de Cordoba">
+      </div>
+      <div>
+        <span>Oficinas centrales</span>
+        <a href="#">C/Los Artesanos S/N Córdoba - 14014</a>
+        <a href="#">C/Los Artesanos S/N Córdoba - 14014</a>
+      </div>
+      <div>
+        <span>Contacto</span>
+        <a href="#">957 764 676</a>
+        <a href="#">900 859 876</a>
+      </div>
+      <div>
+        <span>Oficina Atención al Cliente</span>
+        <a href="#">Plaza de Colón S/N Córdoba - 14001</a>
+        <a href="#">957 476 450</a>
+      </div>
+    </section>
+    <section class="footer-social">
+      <div class="line"></div>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="line"></div>
+    </section>
+    <section class="footer-copyright">
+      <p>© Autobues de Córdoba, S.A.</p>
+      <a href="#">Política de cookies</a>
+      <a href="#">Aviso legal y Política de privacidad</a>
+      <a href="#">Accesibilidad</a>
+      <a href="#">Mapa del sitio</a>
+    </section>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="./scripts/Navbar.js"></script>
+</body>
+
+</html>
