@@ -1,0 +1,158 @@
+body{
+    margin: 0px;
+}
+
+.imagen{
+    width: 100%;
+}
+
+h1{
+    color: rgb(57, 167, 0);
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    color: rgb(57, 167, 0);
+    border-bottom: 2px solid rgb(57, 167, 0);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.pasos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 60%;
+    margin: 0 auto;
+}
+
+.paso{
+    display: flex;
+    margin: 10px;
+    padding: 3px;
+    background-color: rgb(228, 248, 217);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.paso:hover{
+    transform: rotate(3deg);
+
+}
+
+.paso p{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.paso img{
+    width: 50px;
+    background-color: rgb(1, 223, 1);
+    border-radius: 10px;
+    height: 50px;
+    margin: 16px 10px;
+}
+
+.bizum{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(151, 151, 151);
+    margin-bottom: 20px;
+    padding: 0 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.bizum:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 0.1s;
+}
+
+.bizum:active{
+    transform: scale(1);
+}
+
+.bizum img{
+    width: 20%;
+    height: 100%;
+}
+
+#recargar{
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(76, 221, 76);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgb(163, 163, 163);
+    align-items: center;
+}
+
+#recargar>p{
+    font-weight: bold;
+    padding-right: 20px;
+    border-right: 3px solid white;
+    font-size: 20px;
+    margin: 0px;
+    margin-right: 10px;
+    width: 20%;
+}
+
+#recargar input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-weight: 16px;
+}
+
+#recargar button{
+    background-color: white;
+    height: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width:800px) {
+    .pasos{
+        width: 90%;
+    }
+
+    #recargar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #recargar>p{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    #recargar input{
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .bizum{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bizum img{
+        width: 40%;
+    }
+}

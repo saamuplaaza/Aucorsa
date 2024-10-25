@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc3d071d52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="menuFooter.css">
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Aucorsa</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu-movil">
+            <button id="toggle-menu"><span class="menu-icon"><i class="fas fa-bars"></i></span></button>
+            <div class="e-menu">
+                <a class="menu-item">Muévete en bus <img src="./images/AucorsaMenuPrincipal/menumobile1.webp"
+                        alt=""></a>
+                <a class="menu-item">Atención al cliente <img src="./images/AucorsaMenuPrincipal/menumobile2.webp"
+                        alt=""></a>
+                <a class="menu-item">Noticias de AUCORSA <img src="./images/AucorsaMenuPrincipal/menumobile3.webp"
+                        alt=""></a>
+                <a class="menu-item">La empresa <img src="./images/AucorsaMenuPrincipal/menumobile4.webp" alt=""></a>
+            </div>
+        </div>
+        <img src="./images/AucorsaMenuPrincipal/logo-aucorsa.svg" alt="logo aucorsa">
+
+        <div class="menuyLogo">
+            <a href="./index.html">
+                <img class="logo-pc" src=" ./images/AucorsaMenuPrincipal/logo-aucorsa.svg" alt="logo aucorsa">
+            </a>
+            <div class="menu">
+                <div class="muevete">
+                    <button class="muevete-button">Viajes en Bus</button>
+                    <div class="menu-content">
+                        <a href="./lineasHorarios.html">Líneas y horarios</a>
+                        <a href="./titulosTarifas.html">Títulos y tarifas</a>
+                        <a href="./gestionTarjetas.html">Gestión de tarjetas</a>
+                    </div>
+                </div>
+                <button>Atención al cliente</button>
+                <button>Noticias de AUCORSA</button>
+            </div>
+        </div>
+        <div class="menu-botones">
+            <p>La empresa</p>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+        </div>
+    </header>
+    <marquee id="noticias">
+        <span data-descr=" |"><a href="http://" target="_blank">Este es el primer aviso importante que queremos que
+                salga en el marquee</a></span>
+        <span data-descr=" |"><a href="http://" target="_blank">Este es el segundo aviso importante que queremos que
+                salga en el marquee</a></span>
+        <span data-descr=" |"><a href="http://" target="_blank">Este es el tercer aviso importante que queremos que
+                salga en el marquee</a></span>
+        <span><a href="http://" target="_blank">Este es el cuarto aviso importante que queremos que salga en el
+                marquee</a></span>
+    </marquee>
+    <img src="./images/AucorsaMenuPrincipal/home-mobile-banner.webp" alt="home-mobile-banner" id="banner-mobile">
+    <img src="./images/AucorsaMenuPrincipal/aucorsa-banner-00.webp" alt="home-mobile-banner" id="banner-pc">
+    <div id="bus">
+        <div id="llegada-bus" class="buscar">
+            <h2>¿Cuándo llega mi bus?</h2>
+            <div>
+                <div class="opciones">
+                    <label for="lineas">Línea:</label>
+                    <select name="lineas">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="E">E</option>
+                        <option value="QM">QM</option>
+                    </select>
+                </div>
+                <div class="opciones">
+                    <label for="paradas">Parada:</label>
+                    <select name="paradas">
+                        <option value="parada1">Parada 1</option>
+                        <option value="parada2">Parada 2</option>
+                        <option value="parada3">Parada 3</option>
+                        <option value="parada4">Parada 4</option>
+                        <option value="parada5">Parada 5</option>
+                        <option value="parada6">Parada 6</option>
+                        <option value="parada7">Parada 7</option>
+                        <option value="parada8">Parada 8</option>
+                        <option value="parada9">Parada 9</option>
+                        <option value="parada10">Parada 10</option>
+                        <option value="parada11">Parada 11</option>
+                        <option value="parada12">Parada 12</option>
+                        <option value="parada13">Parada 13</option>
+                        <option value="parada14">Parada 14</option>
+                        <option value="parada15">Parada 15</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button">Buscar</button>
+            <div id="paradas">
+                <button type="button" class="boton-parada">Paradas cercanas</button>
+                <button type="button" class="boton-parada">Paradas favoritas</button>
+            </div>
+        </div>
+        <div id="buscar-destino" class="buscar">
+            <h2>¿Cómo llego a mi destino?</h2>
+            <input type="text" placeholder="Origen">
+            <input type="text" placeholder="Destino">
+            <button type="button">Buscar</button>
+            <div id="paradas">
+                <button type="button" class="todas-paradas">Ver todas las líneas</button>
+            </div>
+        </div>
+        <div id="recargar" class="buscar">
+            <h2>Recargar mi tarjeta AUCORSA</h2>
+            <input type="text" placeholder="Tarjeta">
+            <p>*El número de la tarjeta aparece en el reverso de la misma</p>
+            <button type="button">Recargar</button>
+            <button type="button">Ver tarjetas</button>
+        </div>
+    </div>
+    <div class="fotos">
+        <a href="http://" target="_blank"><img id="lineas-horarios"
+                src="./images/AucorsaMenuPrincipal/lineasyhorarios-300x211.webp" alt=""></a>
+        <a href="http://" target="_blank"><img id="lineas-horarios"
+                src="./images/AucorsaMenuPrincipal/gestiondetarjetas-300x211.webp" alt=""></a>
+        <a href="http://" target="_blank"><img id="lineas-horarios"
+                src="./images/AucorsaMenuPrincipal/contacto-300x211.webp" alt=""></a>
+    </div>
+    <footer>
+        <div>
+            <img class="foto-footer" src="./images/logo-aucorsa.svg" alt="">
+            <img class="foto-footer" src="./images/ayuncordoba.svg" alt="">
+        </div>
+        <div>
+            <h3>Oficinas centrales</h3>
+            <p>C/Los Artesanos s/n</p>
+            <p>Córdoba - 14014</p>
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <p>957 764 676</p>
+            <p>900 859 876</p>
+            <p>aucorsa@aucora.es</p>
+        </div>
+        <div>
+            <h3>Oficina Atención al Cliente</h3>
+            <p>Plaza de Colón s/n</p>
+            <p>Córdoba - 14001</p>
+            <p>957 476 450</p>
+        </div>
+        <div class="redes-sociales">
+            <div>
+                <hr>
+            </div>
+            <a href="https://www.facebook.com/aucorsa.es" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.facebook.com/aucorsa.es" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/aucorsa.cordoba/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-square-instagram"></i></a>
+            <div>
+                <hr>
+            </div>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+</body>
+
+</html>

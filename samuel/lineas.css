@@ -1,0 +1,224 @@
+body{
+    margin: 0px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.titulo{
+    color: rgb(57, 167, 0);
+    width: 100%;
+    text-align: center;
+}
+
+.filtro{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.filtro p{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.filtro p:hover{
+    color: rgb(57, 167, 0);
+}
+
+.imagenes-linea{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#linea1 .imagenes-linea{
+    background-color: rgb(22, 108, 75);
+}
+
+#linea1 h1{
+    color: rgb(22, 108, 75);
+}
+
+#linea2 .imagenes-linea{
+    background-color: rgb(223, 11, 24);
+}
+
+#linea2 h1{
+    color: rgb(223, 11, 24);
+}
+
+#linea3 .imagenes-linea{
+    background-color: rgb(154, 101, 164);
+}
+
+#linea3 h1{
+    color: rgb(154, 101, 164);
+}
+
+#linea4 .imagenes-linea{
+    background-color: rgb(238, 150, 190);
+}
+
+#linea4 h1{
+    color: rgb(238, 150, 190);
+}
+
+#linea5 .imagenes-linea{
+    background-color: rgb(1, 73, 139);
+}
+
+#linea5 h1{
+    color: rgb(1, 73, 139);
+}
+
+#linea6 .imagenes-linea{
+    background-color: rgb(76, 191, 236);
+}
+
+#linea6 h1{
+    color: rgb(76, 191, 236);
+}
+
+#linea7 .imagenes-linea{
+    background-color: rgb(236, 122, 40);
+}
+
+#linea7 h1{
+    color: rgb(236, 122, 40);
+}
+
+#linea8 .imagenes-linea{
+    background-color: rgb(255, 207, 23);
+}
+
+#linea8 h1{
+    color: rgb(255, 207, 23);
+}
+
+#linea9 .imagenes-linea{
+    background-color: rgb(228, 30, 123);
+}
+
+#linea9 h1{
+    color: rgb(228, 30, 123);
+}
+
+#linea10 .imagenes-linea{
+    background-color: rgb(227, 225, 92);
+}
+
+#linea10 h1{
+    color: rgb(227, 225, 92);
+}
+
+#linea11 .imagenes-linea{
+    background-color: rgb(30, 140, 198);
+}
+
+#linea11 h1{
+    color: rgb(30, 140, 198);
+}
+
+#linea12 .imagenes-linea{
+    background-color: rgb(101, 177, 71);
+}
+
+#linea12 h1{
+    color: rgb(101, 177, 71);
+}
+
+#linea13 .imagenes-linea{
+    background-color: rgb(163, 99, 41);
+}
+
+#linea13 h1{
+    color: rgb(163, 99, 41);
+}
+
+#linea14 .imagenes-linea{
+    background-color: rgb(95, 56, 19);
+}
+
+#linea14 h1{
+    color: rgb(95, 56, 19);
+}
+
+#lineaC2 .imagenes-linea{
+    background-color: rgb(240, 146, 113);
+}
+
+#lineaC2 h1{
+    color: rgb(240, 146, 113);
+}
+
+#linea46 .imagenes-linea{
+    background-color: rgb(242, 146, 0);
+}
+
+#linea46 h1{
+    color: rgb(242, 146, 0);
+}
+
+
+
+.lineas{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 30px;
+}
+
+.linea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+.linea h1{
+    margin: 0px;
+    text-align: left;
+}
+
+.linea div{
+    display: flex;
+    /* align-items: center; */
+    text-align: left;
+}
+
+.info-linea>div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.info-linea>div>p::before{
+    content: "·";
+}
+
+p{
+    margin: 3px;
+}
+
+@media (min-width: 800px) {
+    body{
+        font-size: 20px;
+    }
+
+    .linea{
+        border-radius: 10px;
+        background-color: rgb(214, 255, 193);
+        padding: 10px;
+        /* color: white; */
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .linea:hover{
+        transform: scale(1.1);
+    }
+}
